@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blaurock Coaching</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #162447;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Arctic_Sunrise_2022.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      margin-top: 30px;
+      border-radius: 50%;
+      border: 3px solid #fff200;
+      box-shadow: 0 4px 12px #0008;
+    }
+    .container {
+      background-color: rgba(22,36,71,0.92);
+      padding: 24px 18px 30px 18px;
+      border-radius: 16px;
+      margin: 28px 0 28px 0;
+      max-width: 440px;
+      width: 95vw;
+      box-shadow: 0 8px 32px #0007;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    h1 {
+      color: #fff200;
+      font-size: 2.1em;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    h2 {
+      margin: 16px 0 12px 0;
+      color: #e1ff00;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 18px;
+      color: #fff;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+      background: #243665;
+      color: #fff;
+      resize: vertical;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 0;
+      font-size: 1.1em;
+      background-color: #fff200;
+      color: #162447;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px #0003;
+      transition: background .2s;
+    }
+    button:hover {
+      background: #e1ff00;
+    }
+    .video-section {
+      margin-top: 30px;
+      padding: 18px;
+      background: rgba(36,54,101,0.95);
+      border-radius: 14px;
+    }
+    .video-section h2 {
+      color: #fff200;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    .note-label {
+      color: #fff;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Alaskan_Malamute_Bi-Eyed_Face.jpg/600px-Alaskan_Malamute_Bi-Eyed_Face.jpg" width="110" alt="Lisa">
+  <div class="container">
+    <h1>Blaurock Coaching</h1>
+    <p>Der Weg beginnt im Kopf – du bist nicht allein.</p>
+
+    <form>
+      <label for="name">Dein Name</label>
+      <input type="text" id="name" required>
+
+      <label for="frage1">Was fordert mich gerade heraus?</label>
+      <textarea id="frage1" rows="2"></textarea>
+
+      <label for="frage2">Was hilft mir, mit der Situation umzugehen?</label>
+      <textarea id="frage2" rows="2"></textarea>
+
+      <label for="frage3">Was möchte ich heute bewusst denken oder fühlen?</label>
+      <textarea id="frage3" rows="2"></textarea>
+
+      <button type="submit">Reflexion speichern</button>
+    </form>
+    
+    <div class="video-section">
+      <h2>Fokustraining – Visualisierung</h2>
+      <video width="100%" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Dein Browser unterstützt das Video-Element nicht.
+      </video>
+      <label class="note-label" for="video-notes">Was hast du während der Übung gespürt, gesehen oder erkannt?</label>
+      <textarea id="video-notes" rows="2"></textarea>
+    </div>
+  </div>
+</body>
+</html>
